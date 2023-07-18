@@ -1,6 +1,6 @@
+#Speak With Machine
 
-
-###Memory
+## Memory
 
 ```javascript
     const num = 12; // Pour la machine: A la place libre n° 1-A de la mémoire je stocke: 12.
