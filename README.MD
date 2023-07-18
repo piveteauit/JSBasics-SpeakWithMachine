@@ -13,9 +13,13 @@
     const obj = { num: 1, str: "It" };  // Pour la machine: Aux places libres 1-C, 1-D je stocke "It"
                                         // A la place libre 7-I je stocke 1
                                         // A la place libre 5-A je stocke les réféences 1-C, 1-D et 7-I
-     // La variable accessible sous le nom de "obj" est égale à "Vas me chercher les valeurs de 5-A. Comme il s'agit de référence vers d'autres emplacements, la machine fera la récursion pour ensuite aller chercher chacune des valeurs jusqu'à n'avoir plus que des valeurs finales"
+     // La variable accessible sous le nom de "obj" est égale à "Vas me chercher les valeurs de 5-A. 
+     // Comme il s'agit de référence vers d'autres emplacements, 
+     // la machine fera la récursion pour ensuite aller chercher chacune des valeurs jusqu'à n'avoir plus que des valeurs finales"
     
     const objCopied = obj;      // Pour la machine: A la place libre I-1, copies moi le contenu de la case 5-A
+                                // Lors de l'assignation, la machine n'ira pas chercher récursivement les valeurs
+                                // >> C'est la nuance entre les variables dites "primitives" et "non primitives"
 
     const arr = [ 2, "So" ];    // Pour les tableux, c'est le même principes, la machine stocke les références vers les valeurs
     const arrCopied = arr;      //  Cela copiera donc la liste des références dans une nouvelle case de la mémoire 
